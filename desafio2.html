@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+</head>
+
+<body>
+    <h1>Formulário de Registro de Usuário</h1>
+    <form action="/processar-registro" method="get">
+        <form>
+            <b>Nome Completo:</b>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+    
+            E-mail: <input type="email" name="email" required multiple>
+            <br>
+            
+            Senha: <input type="password" name="senha">
+            Confirmação da Senha: <input type="password" name="confirmacao"><br>
+
+            País:<select name="país">
+                <option value="AG">Angola</option>
+                <option value="BR">Brasil</option>
+                <option value="EUA">Estados Unidos</option>
+            </select>
+           
+            <input type="checkbox" name="termos" value="1">
+            Aceitar termos e condições:
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+
+</html>
